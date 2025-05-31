@@ -1,0 +1,17 @@
+echo ">> Gestão Contratos <<" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/WanderMotta/contra.git
+git push -u origin main
+
+//////////////////////////
+📋 EXPLICAÇÃO DE CADA COMANDO
+echo "# app" >> README.md - Cria o arquivo README.md com o título do projeto
+git init - Inicializa o repositório Git local
+git add . - Adiciona TODOS os arquivos da pasta ao staging
+git commit -m "first commit" - Faz o primeiro commit com todos os arquivos
+git branch -M main - Renomeia a branch principal para 'main'
+git remote add origin https://github.com/WanderMotta/app.git - Conecta ao repositório remoto
+git push -u origin main - Envia todos os arquivos para o GitHub
