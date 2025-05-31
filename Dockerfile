@@ -7,10 +7,11 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     libcurl4-openssl-dev \
     libicu-dev \
+    libzip-dev \
     zip \
     curl \
     git \
-	&& docker-php-ext-install zip \
+    && docker-php-ext-install zip \
     && docker-php-ext-install pdo pdo_mysql mbstring exif pcntl bcmath gd intl curl
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
